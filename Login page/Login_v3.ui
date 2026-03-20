@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>630</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>560</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1100</width>
+    <height>780</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>M3M English</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow { background-color: white; }</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame_left">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame_left {
+    background: qlineargradient(x1:0,y1:0,x2:0.3,y2:1,
+        stop:0 #c6db2e, stop:1 #4caf50);
+    border: none;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_mascot">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-30</y>
+         <width>460</width>
+         <height>650</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{background:transparent;border:none;}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>chuoi.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QFrame" name="circle_1">
+       <property name="geometry">
+        <rect>
+         <x>28</x>
+         <y>180</y>
+         <width>90</width>
+         <height>90</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame{background:#2e7d32;border-radius:45px;border:none;}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+      <widget class="QFrame" name="circle_2">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>290</y>
+         <width>70</width>
+         <height>70</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame{background:#388e3c;border-radius:35px;border:none;}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+      <widget class="QFrame" name="circle_3">
+       <property name="geometry">
+        <rect>
+         <x>35</x>
+         <y>430</y>
+         <width>80</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame{background:#1B5E20;border-radius:40px;border:none;}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+      <widget class="QFrame" name="circle_4">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>430</y>
+         <width>100</width>
+         <height>100</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame{background:#1B5E20;border-radius:50px;border:none;}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_title_left">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>300</y>
+         <width>300</width>
+         <height>55</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{color:white;font-size:30px;font-weight:800;background:transparent;border:none;}</string>
+       </property>
+       <property name="text">
+        <string>M3M English</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frame_card">
+       <property name="geometry">
+        <rect>
+         <x>55</x>
+         <y>365</y>
+         <width>300</width>
+         <height>95</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame#frame_card{background:white;border-radius:16px;border:none;}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_tagline">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>280</width>
+          <height>75</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{background:transparent;border:none;}</string>
+        </property>
+        <property name="text">
+         <string>&lt;div align=&quot;center&quot;&gt;
+&lt;span style=&quot;color:#2E7D32;font-size:16px;font-weight:700;&quot;&gt;Learn &lt;/span&gt;
+&lt;span style=&quot;color:#FF4B4B;font-size:16px;font-weight:700;&quot;&gt;1000 words&lt;/span&gt;&lt;br&gt;
+&lt;span style=&quot;color:#444;font-size:15px;&quot;&gt;in just &lt;/span&gt;
+&lt;span style=&quot;color:#C9D83B;font-size:15px;font-weight:700;&quot;&gt;30 days!&lt;/span&gt;
+&lt;/div&gt;</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>471</width>
+         <height>601</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../../Users/admin/Pictures/my pic/hihi.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <zorder>label</zorder>
+      <zorder>label_mascot</zorder>
+      <zorder>circle_1</zorder>
+      <zorder>circle_2</zorder>
+      <zorder>circle_3</zorder>
+      <zorder>circle_4</zorder>
+      <zorder>label_title_left</zorder>
+      <zorder>frame_card</zorder>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_right">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame_right{background:white;border:none;}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QWidget" name="layoutWidget_right">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>390</width>
+         <height>1055</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="vLayout_right">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <property name="leftMargin">
+         <number>8</number>
+        </property>
+        <property name="topMargin">
+         <number>8</number>
+        </property>
+        <property name="rightMargin">
+         <number>8</number>
+        </property>
+        <property name="bottomMargin">
+         <number>8</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_M3M">
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+    color:qlineargradient(spread:pad,x1:0.455,y1:0,x2:0.455,y2:1,
+        stop:0 rgba(205,220,57,255),stop:0.75 rgba(205,220,57,255),
+        stop:1 rgba(174,213,129,255));
+    font-size:36px;font-weight:800;background:transparent;border:none;
+    padding-bottom:0px;
+}</string>
+          </property>
+          <property name="text">
+           <string>M3M</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_English">
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+    color:#4CAF50;font-size:36px;font-weight:800;
+    background:transparent;border:none;margin-top:-12px;
+}</string>
+          </property>
+          <property name="text">
+           <string>English</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_tabs">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame#frame_tabs{
+    background:#e8e8e8;
+    border-radius:10px;
+    border:none;
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="btn_Signup">
+           <property name="geometry">
+            <rect>
+             <x>195</x>
+             <y>4</y>
+             <width>171</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+    background:transparent;color:#a259ff;
+    border-radius:8px;font-weight:bold;font-size:13px;border:none;
+}
+QPushButton:hover{background:#d8d8d8;}</string>
+           </property>
+           <property name="text">
+            <string>Sign up</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btn_Login">
+           <property name="geometry">
+            <rect>
+             <x>4</x>
+             <y>4</y>
+             <width>191</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+    background:#34C759;color:white;
+    border-radius:8px;font-weight:bold;font-size:13px;border:none;
+}
+QPushButton:hover{background:#2db34e;}</string>
+           </property>
+           <property name="text">
+            <string>Login</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <spacer name="sp1">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>4</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_username">
+          <property name="styleSheet">
+           <string notr="true">QLabel{font-size:13px;background:transparent;border:none;color:#222;}</string>
+          </property>
+          <property name="text">
+           <string>User name:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_username">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+    border:1.5px solid #FEC300;border-radius:8px;
+    padding:4px 10px;background:white;font-size:13px;color:#555;
+}
+QLineEdit:focus{border:1.5px solid #34C759;}</string>
+          </property>
+          <property name="placeholderText">
+           <string>Username</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="hLayout_emailRow">
+          <item>
+           <widget class="QLabel" name="label_email">
+            <property name="styleSheet">
+             <string notr="true">QLabel{font-size:13px;background:transparent;border:none;color:#222;}</string>
+            </property>
+            <property name="text">
+             <string>Email Address:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="noti_email">
+            <property name="styleSheet">
+             <string notr="true">QLabel{color:#e53935;font-size:11px;background:transparent;border:none;}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="enter_email">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+    border:1.5px solid #FEC300;border-radius:8px;
+    padding:4px 10px;background:white;font-size:13px;color:#555;
+}
+QLineEdit:focus{border:1.5px solid #34C759;}</string>
+          </property>
+          <property name="placeholderText">
+           <string>m3menglish@gmail.com</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="hLayout_pwRow">
+          <item>
+           <widget class="QLabel" name="label_password">
+            <property name="styleSheet">
+             <string notr="true">QLabel{font-size:13px;background:transparent;border:none;color:#222;}</string>
+            </property>
+            <property name="text">
+             <string>Password:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="noti_password">
+            <property name="styleSheet">
+             <string notr="true">QLabel{color:#e53935;font-size:11px;background:transparent;border:none;}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="enter_password">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+    border:1.5px solid #FEC300;border-radius:8px;
+    padding:4px 10px;background:white;font-size:13px;color:#555;
+}
+QLineEdit:focus{border:1.5px solid #34C759;}</string>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+          <property name="placeholderText">
+           <string>m3mstudy</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_forgot">
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+    color:#34C759;font-size:11px;background:transparent;
+    border:none;font-weight:bold;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="noti_general">
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+    color:#e53935;font-size:11px;background:transparent;
+    border:none;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnLogin_Enter">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+    background:#34C759;color:white;border-radius:8px;
+    font-weight:bold;font-size:15px;border:none;
+}
+QPushButton:hover{background:#2db34e;}
+QPushButton:pressed{background:#259e45;}</string>
+          </property>
+          <property name="text">
+           <string>Login</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_firsttime_full">
+          <property name="styleSheet">
+           <string notr="true">QLabel{font-size:12px;background:transparent;border:none;color:#444;}</string>
+          </property>
+          <property name="text">
+           <string>&lt;div align=&quot;center&quot;&gt;First time to M3M?&amp;nbsp;&lt;span style=&quot;color:#34c759;font-weight:bold;&quot;&gt;Sign Up&lt;/span&gt;&lt;/div&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="hLayout_or">
+          <item>
+           <widget class="QFrame" name="line_left">
+            <property name="styleSheet">
+             <string notr="true">QFrame{color:#ccc;border:none;}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::HLine</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_or">
+            <property name="styleSheet">
+             <string notr="true">QLabel{color:#888;font-size:12px;padding:0 8px;background:transparent;border:none;}</string>
+            </property>
+            <property name="text">
+             <string>or</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="line_right">
+            <property name="styleSheet">
+             <string notr="true">QFrame{color:#ccc;border:none;}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::HLine</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="login_gg">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+    border:1.5px solid #FEC300;border-radius:8px;
+    padding:5px;background:white;font-size:13px;color:#333;
+}
+QPushButton:hover{background:#fffbf0;}</string>
+          </property>
+          <property name="text">
+           <string>Login with Google</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="login_fb">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+    border:1.5px solid #FEC300;border-radius:8px;
+    padding:5px;background:white;font-size:13px;color:#333;
+}
+QPushButton:hover{background:#fffbf0;}</string>
+          </property>
+          <property name="text">
+           <string>Login with Facebook</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="login_apple">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+    border:1.5px solid #FEC300;border-radius:8px;
+    padding:5px;background:white;font-size:13px;color:#333;
+}
+QPushButton:hover{background:#fffbf0;}</string>
+          </property>
+          <property name="text">
+           <string>Login with Apple</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="sp_bottom">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>10</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QFrame" name="frame">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>163</y>
+         <width>391</width>
+         <height>471</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame{background-color:white}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="0">
+         <widget class="QLineEdit" name="Signup_username">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+    border:1.5px solid #FEC300;border-radius:8px;
+    padding:4px 10px;background:white;font-size:13px;color:#555;
+}
+QLineEdit:focus{border:1.5px solid #34C759;}</string>
+          </property>
+          <property name="placeholderText">
+           <string>Username</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="3">
+         <layout class="QHBoxLayout" name="hLayout_emailRow_2">
+          <item>
+           <widget class="QLabel" name="label_email_3">
+            <property name="styleSheet">
+             <string notr="true">QLabel{font-size:13px;background:transparent;border:none;color:#222;}</string>
+            </property>
+            <property name="text">
+             <string>Email Address:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="noti_email_signup">
+            <property name="styleSheet">
+             <string notr="true">QLabel{color:#e53935;font-size:11px;background:transparent;border:none;}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="5" column="0" colspan="3">
+         <widget class="QLineEdit" name="enter_password_signup">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+    border:1.5px solid #FEC300;border-radius:8px;
+    padding:4px 10px;background:white;font-size:13px;color:#555;
+}
+QLineEdit:focus{border:1.5px solid #34C759;}</string>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+          <property name="placeholderText">
+           <string>m3mstudy</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_forgot_2">
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+    color:#34C759;font-size:11px;background:transparent;
+    border:none;font-weight:bold;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="3">
+         <widget class="QLineEdit" name="enter_email_signup">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+    border:1.5px solid #FEC300;border-radius:8px;
+    padding:4px 10px;background:white;font-size:13px;color:#555;
+}
+QLineEdit:focus{border:1.5px solid #34C759;}</string>
+          </property>
+          <property name="placeholderText">
+           <string>m3menglish@gmail.com</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0" colspan="3">
+         <widget class="QPushButton" name="btn_Signup_2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+    background:#34C759;color:white;border-radius:8px;
+    font-weight:bold;font-size:15px;border:none;
+}
+QPushButton:hover{background:#2db34e;}
+QPushButton:pressed{background:#259e45;}</string>
+          </property>
+          <property name="text">
+           <string>Sign Up</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="1">
+         <spacer name="sp_bottom_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>13</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_username_5">
+          <property name="styleSheet">
+           <string notr="true">QLabel{font-size:13px;background:transparent;border:none;color:#222;}</string>
+          </property>
+          <property name="text">
+           <string>User name:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="Signup_age">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+    border:1.5px solid #FEC300;border-radius:8px;
+    padding:4px 10px;background:white;font-size:13px;color:#555;
+}
+QLineEdit:focus{border:1.5px solid #34C759;}</string>
+          </property>
+          <property name="placeholderText">
+           <string>Age</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="3">
+         <layout class="QHBoxLayout" name="hLayout_pwRow_2">
+          <item>
+           <widget class="QLabel" name="label_password_3">
+            <property name="styleSheet">
+             <string notr="true">QLabel{font-size:13px;background:transparent;border:none;color:#222;}</string>
+            </property>
+            <property name="text">
+             <string>Password:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="noti_password_signup">
+            <property name="styleSheet">
+             <string notr="true">QLabel{color:#e53935;font-size:11px;background:transparent;border:none;}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_username_6">
+          <property name="styleSheet">
+           <string notr="true">QLabel{font-size:13px;background:transparent;border:none;color:#222;}</string>
+          </property>
+          <property name="text">
+           <string>Phone Number:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="Signup_Pnumber">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+    border:1.5px solid #FEC300;border-radius:8px;
+    padding:4px 10px;background:white;font-size:13px;color:#555;
+}
+QLineEdit:focus{border:1.5px solid #34C759;}</string>
+          </property>
+          <property name="placeholderText">
+           <string>012345678</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_username_7">
+          <property name="styleSheet">
+           <string notr="true">QLabel{font-size:13px;background:transparent;border:none;color:#222;}</string>
+          </property>
+          <property name="text">
+           <string>Age:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="QLabel" name="label_login1">
+          <property name="styleSheet">
+           <string notr="true">QLabel{font-size:12px;background:transparent;border:none;color:#444;}</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Already have an account? &lt;span style=&quot; font-weight:600; color:#34c759;&quot;&gt;Login&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0" colspan="3">
+         <widget class="QPushButton" name="login_apple_2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+    border:1.5px solid #FEC300;border-radius:8px;
+    padding:5px;background:white;font-size:13px;color:#333;
+}
+QPushButton:hover{background:#fffbf0;}</string>
+          </property>
+          <property name="text">
+           <string>Sign up with Apple</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0" colspan="3">
+         <widget class="QPushButton" name="signup_gg_2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+    border:1.5px solid #FEC300;border-radius:8px;
+    padding:5px;background:white;font-size:13px;color:#333;
+}
+QPushButton:hover{background:#fffbf0;}</string>
+          </property>
+          <property name="text">
+           <string>Sign up with Google</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <layout class="QHBoxLayout" name="hLayout_or_2">
+          <item>
+           <widget class="QFrame" name="line_left_2">
+            <property name="styleSheet">
+             <string notr="true">QFrame{color:#ccc;border:none;}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::HLine</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_or_2">
+            <property name="styleSheet">
+             <string notr="true">QLabel{color:#888;font-size:12px;padding:0 8px;background:transparent;border:none;}</string>
+            </property>
+            <property name="text">
+             <string>or</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="line_right_2">
+            <property name="styleSheet">
+             <string notr="true">QFrame{color:#ccc;border:none;}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::HLine</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="14" column="0" colspan="3">
+         <widget class="QPushButton" name="login_fb_2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+    border:1.5px solid #FEC300;border-radius:8px;
+    padding:5px;background:white;font-size:13px;color:#333;
+}
+QPushButton:hover{background:#fffbf0;}</string>
+          </property>
+          <property name="text">
+           <string>Sign up with Facebook</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLabel" name="general_noti_signup">
+          <property name="styleSheet">
+           <string notr="true">QLabel{color:#e53935;font-size:11px;background:transparent;border:none;}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLabel" name="noti_general_2">
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+    color:#e53935;font-size:11px;background:transparent;
+    border:none;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
