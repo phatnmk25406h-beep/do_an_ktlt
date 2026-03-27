@@ -1,0 +1,1343 @@
+
+from PyQt6 import QtCore, QtGui, QtWidgets
+from PyQt6.QtCore import Qt
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(954, 563)
+        MainWindow.setStyleSheet("QMainWindow { background: #f5f5f5; }")
+        self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.user_frm_2 = QtWidgets.QFrame(parent=self.centralwidget)
+        self.user_frm_2.setGeometry(QtCore.QRect(10, 20, 231, 531))
+        self.user_frm_2.setStyleSheet("QFrame#user_frm_2 { background: white; border-radius: 16px; }")
+        self.user_frm_2.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.user_frm_2.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.user_frm_2.setObjectName("user_frm_2")
+        self.frame_9 = QtWidgets.QFrame(parent=self.user_frm_2)
+        self.frame_9.setGeometry(QtCore.QRect(10, 70, 211, 151))
+        self.frame_9.setStyleSheet("QFrame#frame_9 { background:#fafafa; border-radius:20px; }")
+        self.frame_9.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame_9.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame_9.setObjectName("frame_9")
+        self.pushButton_2 = QtWidgets.QPushButton(parent=self.frame_9)
+        self.pushButton_2.setGeometry(QtCore.QRect(10, 20, 91, 51))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.pushButton_2.setFont(font)
+        self.pushButton_2.setStyleSheet("\n"
+"        QPushButton { background:white; border:none; border-radius:6px; font-size:10px; color:#222; }\n"
+"        QPushButton:hover { background:#e8fdf0; color:#22c55e; }\n"
+"        QPushButton:checked { background:#dff1e6; color:#22c55e; font-weight:bold; border:1.5px solid #22c55e; }\n"
+"       ")
+        self.pushButton_2.setCheckable(True)
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(parent=self.frame_9)
+        self.pushButton_3.setGeometry(QtCore.QRect(110, 20, 91, 51))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.pushButton_3.setFont(font)
+        self.pushButton_3.setStyleSheet("\n"
+"        QPushButton { background:white; border:none; border-radius:6px; font-size:10px; color:#222; }\n"
+"        QPushButton:hover { background:#e8fdf0; color:#22c55e; }\n"
+"        QPushButton:checked { background:#dff1e6; color:#22c55e; font-weight:bold; border:1.5px solid #22c55e; }\n"
+"       ")
+        self.pushButton_3.setCheckable(True)
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_4 = QtWidgets.QPushButton(parent=self.frame_9)
+        self.pushButton_4.setGeometry(QtCore.QRect(10, 80, 91, 51))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.pushButton_4.setFont(font)
+        self.pushButton_4.setStyleSheet("\n"
+"        QPushButton { background:white; border:none; border-radius:6px; font-size:10px; color:#222; }\n"
+"        QPushButton:hover { background:#e8fdf0; color:#22c55e; }\n"
+"        QPushButton:checked { background:#dff1e6; color:#22c55e; font-weight:bold; border:1.5px solid #22c55e; }\n"
+"       ")
+        self.pushButton_4.setCheckable(True)
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.pushButton_5 = QtWidgets.QPushButton(parent=self.frame_9)
+        self.pushButton_5.setGeometry(QtCore.QRect(110, 80, 91, 51))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.pushButton_5.setFont(font)
+        self.pushButton_5.setStyleSheet("\n"
+"        QPushButton { background:white; border:none; border-radius:6px; font-size:10px; color:#222; }\n"
+"        QPushButton:hover { background:#e8fdf0; color:#22c55e; }\n"
+"        QPushButton:checked { background:#dff1e6; color:#22c55e; font-weight:bold; border:1.5px solid #22c55e; }\n"
+"       ")
+        self.pushButton_5.setCheckable(True)
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.frame_10 = QtWidgets.QFrame(parent=self.user_frm_2)
+        self.frame_10.setGeometry(QtCore.QRect(10, 230, 211, 291))
+        self.frame_10.setStyleSheet("QFrame#frame_10 { background:#fafafa; border-radius:20px; }")
+        self.frame_10.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame_10.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame_10.setObjectName("frame_10")
+        self.label_40 = QtWidgets.QLabel(parent=self.frame_10)
+        self.label_40.setGeometry(QtCore.QRect(10, 10, 131, 16))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_40.setFont(font)
+        self.label_40.setStyleSheet("QLabel { background:transparent; color:black; font-size:10px; font-weight:700; border:none; }")
+        self.label_40.setObjectName("label_40")
+        self.label_42 = QtWidgets.QLabel(parent=self.frame_10)
+        self.label_42.setGeometry(QtCore.QRect(10, 40, 31, 31))
+        self.label_42.setStyleSheet("QLabel { background:#22c55e; color:white; border-radius:8px; font-size:9px; font-weight:700; padding:4px; }")
+        self.label_42.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_42.setObjectName("label_42")
+        self.frame_11 = QtWidgets.QFrame(parent=self.frame_10)
+        self.frame_11.setGeometry(QtCore.QRect(50, 40, 151, 41))
+        self.frame_11.setStyleSheet("QFrame { background:#ffffff; border:none; border-radius:8px; }")
+        self.frame_11.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame_11.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame_11.setObjectName("frame_11")
+        self.label_41 = QtWidgets.QLabel(parent=self.frame_11)
+        self.label_41.setGeometry(QtCore.QRect(10, 2, 101, 16))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_41.setFont(font)
+        self.label_41.setStyleSheet("QLabel { background:transparent; color:black; font-size:10px; font-weight:700; border:none; }")
+        self.label_41.setObjectName("label_41")
+        self.label_ex_5 = QtWidgets.QLabel(parent=self.frame_11)
+        self.label_ex_5.setGeometry(QtCore.QRect(10, 19, 121, 14))
+        self.label_ex_5.setStyleSheet("QLabel { background:transparent; color:#7c8a7e; font-size:8px; border:none; }")
+        self.label_ex_5.setObjectName("label_ex_5")
+        self.checkBox = QtWidgets.QCheckBox(parent=self.frame_11)
+        self.checkBox.setGeometry(QtCore.QRect(120, 10, 21, 21))
+        self.checkBox.setStyleSheet("\n"
+"         QCheckBox::indicator { width:14px; height:14px; border-radius:4px; border:1.5px solid #d1d5db; background:white; }\n"
+"         QCheckBox::indicator:checked { background:#22c55e; border-color:#22c55e; }\n"
+"        ")
+        self.checkBox.setText("")
+        self.checkBox.setObjectName("checkBox")
+        self.label_46 = QtWidgets.QLabel(parent=self.frame_10)
+        self.label_46.setGeometry(QtCore.QRect(10, 90, 31, 31))
+        self.label_46.setStyleSheet("QLabel { background:#22c55e; color:white; border-radius:8px; font-size:9px; font-weight:700; }")
+        self.label_46.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_46.setObjectName("label_46")
+        self.frame_12 = QtWidgets.QFrame(parent=self.frame_10)
+        self.frame_12.setGeometry(QtCore.QRect(50, 90, 151, 41))
+        self.frame_12.setStyleSheet("QFrame { background:#ffffff; border:none; border-radius:8px; }")
+        self.frame_12.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame_12.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame_12.setObjectName("frame_12")
+        self.label_43 = QtWidgets.QLabel(parent=self.frame_12)
+        self.label_43.setGeometry(QtCore.QRect(10, 2, 101, 16))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_43.setFont(font)
+        self.label_43.setStyleSheet("QLabel { background:transparent; color:black; font-size:10px; font-weight:700; border:none; }")
+        self.label_43.setObjectName("label_43")
+        self.label_ex_6 = QtWidgets.QLabel(parent=self.frame_12)
+        self.label_ex_6.setGeometry(QtCore.QRect(10, 19, 131, 14))
+        self.label_ex_6.setStyleSheet("QLabel { background:transparent; color:#7c8a7e; font-size:8px; border:none; }")
+        self.label_ex_6.setObjectName("label_ex_6")
+        self.checkBox_2 = QtWidgets.QCheckBox(parent=self.frame_12)
+        self.checkBox_2.setGeometry(QtCore.QRect(120, 10, 21, 21))
+        self.checkBox_2.setStyleSheet("\n"
+"         QCheckBox::indicator { width:14px; height:14px; border-radius:4px; border:1.5px solid #d1d5db; background:white; }\n"
+"         QCheckBox::indicator:checked { background:#22c55e; border-color:#22c55e; }\n"
+"        ")
+        self.checkBox_2.setText("")
+        self.checkBox_2.setObjectName("checkBox_2")
+        self.label_47 = QtWidgets.QLabel(parent=self.frame_10)
+        self.label_47.setGeometry(QtCore.QRect(10, 140, 31, 31))
+        self.label_47.setStyleSheet("QLabel { background:#22c55e; color:white; border-radius:8px; font-size:9px; font-weight:700; }")
+        self.label_47.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_47.setObjectName("label_47")
+        self.frame_13 = QtWidgets.QFrame(parent=self.frame_10)
+        self.frame_13.setGeometry(QtCore.QRect(50, 140, 151, 41))
+        self.frame_13.setStyleSheet("QFrame { background:#ffffff; border:none; border-radius:8px; }")
+        self.frame_13.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame_13.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame_13.setObjectName("frame_13")
+        self.label_44 = QtWidgets.QLabel(parent=self.frame_13)
+        self.label_44.setGeometry(QtCore.QRect(10, 2, 101, 16))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_44.setFont(font)
+        self.label_44.setStyleSheet("QLabel { background:transparent; color:black; font-size:10px; font-weight:700; border:none; }")
+        self.label_44.setObjectName("label_44")
+        self.label_ex_7 = QtWidgets.QLabel(parent=self.frame_13)
+        self.label_ex_7.setGeometry(QtCore.QRect(10, 19, 131, 14))
+        self.label_ex_7.setStyleSheet("QLabel { background:transparent; color:#7c8a7e; font-size:8px; border:none; }")
+        self.label_ex_7.setObjectName("label_ex_7")
+        self.checkBox_3 = QtWidgets.QCheckBox(parent=self.frame_13)
+        self.checkBox_3.setGeometry(QtCore.QRect(120, 10, 21, 21))
+        self.checkBox_3.setStyleSheet("\n"
+"         QCheckBox::indicator { width:14px; height:14px; border-radius:4px; border:1.5px solid #d1d5db; background:white; }\n"
+"         QCheckBox::indicator:checked { background:#22c55e; border-color:#22c55e; }\n"
+"        ")
+        self.checkBox_3.setText("")
+        self.checkBox_3.setObjectName("checkBox_3")
+        self.label_48 = QtWidgets.QLabel(parent=self.frame_10)
+        self.label_48.setGeometry(QtCore.QRect(10, 190, 31, 31))
+        self.label_48.setStyleSheet("QLabel { background:#22c55e; color:white; border-radius:8px; font-size:9px; font-weight:700; }")
+        self.label_48.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_48.setObjectName("label_48")
+        self.frame_14 = QtWidgets.QFrame(parent=self.frame_10)
+        self.frame_14.setGeometry(QtCore.QRect(50, 190, 151, 41))
+        self.frame_14.setStyleSheet("QFrame { background:#ffffff; border:none; border-radius:8px; }")
+        self.frame_14.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame_14.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame_14.setObjectName("frame_14")
+        self.label_45 = QtWidgets.QLabel(parent=self.frame_14)
+        self.label_45.setGeometry(QtCore.QRect(10, 2, 101, 16))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_45.setFont(font)
+        self.label_45.setStyleSheet("QLabel { background:transparent; color:black; font-size:10px; font-weight:700; border:none; }")
+        self.label_45.setObjectName("label_45")
+        self.label_ex_8 = QtWidgets.QLabel(parent=self.frame_14)
+        self.label_ex_8.setGeometry(QtCore.QRect(10, 19, 131, 14))
+        self.label_ex_8.setStyleSheet("QLabel { background:transparent; color:#7c8a7e; font-size:8px; border:none; }")
+        self.label_ex_8.setObjectName("label_ex_8")
+        self.checkBox_4 = QtWidgets.QCheckBox(parent=self.frame_14)
+        self.checkBox_4.setGeometry(QtCore.QRect(120, 10, 21, 21))
+        self.checkBox_4.setStyleSheet("\n"
+"         QCheckBox::indicator { width:14px; height:14px; border-radius:4px; border:1.5px solid #d1d5db; background:white; }\n"
+"         QCheckBox::indicator:checked { background:#22c55e; border-color:#22c55e; }\n"
+"        ")
+        self.checkBox_4.setText("")
+        self.checkBox_4.setObjectName("checkBox_4")
+        self.button_continue_2 = QtWidgets.QPushButton(parent=self.frame_10)
+        self.button_continue_2.setGeometry(QtCore.QRect(20, 250, 181, 31))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.button_continue_2.setFont(font)
+        self.button_continue_2.setStyleSheet("\n"
+"        QPushButton { background:#22c55e; border-radius:8px; color:white; font-size:9px; font-weight:700; }\n"
+"        QPushButton:hover { background:#16a34a; }\n"
+"        QPushButton:pressed { background:#15803d; }\n"
+"       ")
+        self.button_continue_2.setObjectName("button_continue_2")
+        self.noti_dowload = QtWidgets.QLabel(parent=self.frame_10)
+        self.noti_dowload.setGeometry(QtCore.QRect(20, 230, 185, 16))
+        self.noti_dowload.setStyleSheet("QLabel{color:#e53935;font-size:11px;background:transparent;border:none;}")
+        self.noti_dowload.setText("")
+        self.noti_dowload.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight|QtCore.Qt.AlignmentFlag.AlignTrailing|QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.noti_dowload.setObjectName("noti_dowload")
+        self.label_39 = QtWidgets.QLabel(parent=self.user_frm_2)
+        self.label_39.setGeometry(QtCore.QRect(30, 30, 181, 16))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_39.setFont(font)
+        self.label_39.setStyleSheet("QLabel { background:transparent; color:black; font-size:20px; font-weight:700; border:none; }")
+        self.label_39.setObjectName("label_39")
+        self.user_frm = QtWidgets.QFrame(parent=self.centralwidget)
+        self.user_frm.setGeometry(QtCore.QRect(250, 20, 211, 101))
+        self.user_frm.setStyleSheet("QFrame#user_frm { background:white; border-radius:16px; }")
+        self.user_frm.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.user_frm.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.user_frm.setObjectName("user_frm")
+        self.label = QtWidgets.QLabel(parent=self.user_frm)
+        self.label.setGeometry(QtCore.QRect(10, 10, 31, 31))
+        self.label.setStyleSheet("QLabel { border-radius:15px; background:#dff1e6; font-size:16px; }")
+        self.label.setScaledContents(True)
+        self.label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(parent=self.user_frm)
+        self.label_2.setGeometry(QtCore.QRect(51, 11, 81, 16))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet("QLabel { background:transparent; color:black; font-size:10px; font-weight:700; border:none; }")
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(parent=self.user_frm)
+        self.label_3.setGeometry(QtCore.QRect(52, 29, 47, 18))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_3.setFont(font)
+        self.label_3.setStyleSheet("QLabel { background:#dff1e6; color:#22c55e; border-radius:8px; font-size:8px; font-weight:700; padding:4px 10px; }")
+        self.label_3.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(parent=self.user_frm)
+        self.label_4.setGeometry(QtCore.QRect(103, 29, 50, 16))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.label_4.setFont(font)
+        self.label_4.setStyleSheet("QLabel { color:#8d8d8d; font-size:8px; background:transparent; }")
+        self.label_4.setObjectName("label_4")
+        self.progressBar = QtWidgets.QProgressBar(parent=self.user_frm)
+        self.progressBar.setGeometry(QtCore.QRect(20, 80, 171, 8))
+        self.progressBar.setMaximumSize(QtCore.QSize(171, 10))
+        self.progressBar.setStyleSheet("\n"
+"       QProgressBar { background:#e5e5e5; border:none; border-radius:3px; }\n"
+"       QProgressBar::chunk { background:#35b653; border-radius:3px; margin:0px; }\n"
+"      ")
+        self.progressBar.setProperty("value", 78)
+        self.progressBar.setTextVisible(False)
+        self.progressBar.setObjectName("progressBar")
+        self.layoutWidget = QtWidgets.QWidget(parent=self.user_frm)
+        self.layoutWidget.setGeometry(QtCore.QRect(13, 50, 181, 22))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.layoutWidget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.label_5 = QtWidgets.QLabel(parent=self.layoutWidget)
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.label_5.setFont(font)
+        self.label_5.setStyleSheet("QLabel { color:#727272; font-size:10px; background:white; }")
+        self.label_5.setObjectName("label_5")
+        self.horizontalLayout.addWidget(self.label_5)
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        self.horizontalLayout.addItem(spacerItem)
+        self.label_6 = QtWidgets.QLabel(parent=self.layoutWidget)
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_6.setFont(font)
+        self.label_6.setStyleSheet("QLabel { color:#24c45d; font-size:8px; font-weight:700; background:white; }")
+        self.label_6.setObjectName("label_6")
+        self.horizontalLayout.addWidget(self.label_6)
+        self.today_lsn = QtWidgets.QFrame(parent=self.centralwidget)
+        self.today_lsn.setGeometry(QtCore.QRect(470, 20, 201, 131))
+        self.today_lsn.setStyleSheet("QFrame#today_lsn { background:white; border-radius:16px; }")
+        self.today_lsn.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.today_lsn.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.today_lsn.setObjectName("today_lsn")
+        self.label_7 = QtWidgets.QLabel(parent=self.today_lsn)
+        self.label_7.setGeometry(QtCore.QRect(10, 10, 31, 31))
+        self.label_7.setStyleSheet("QLabel { background:#dff1e6; color:#22c55e; border-radius:8px; font-size:14px; padding:4px; }")
+        self.label_7.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_7.setObjectName("label_7")
+        self.button_continue = QtWidgets.QPushButton(parent=self.today_lsn)
+        self.button_continue.setGeometry(QtCore.QRect(10, 90, 181, 31))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.button_continue.setFont(font)
+        self.button_continue.setStyleSheet("""
+            QPushButton {
+                background-color: #22c55e;
+                color: white;
+                border-radius: 12px;
+                font-size: 11px;
+                font-weight: bold;
+                padding: 8px;
+            }
+            QPushButton:hover {
+                background-color: #16a34a;
+            }
+            QPushButton:pressed {
+                background-color: #15803d;
+            }
+        """)
+
+        # Để có hiệu ứng đổ bóng nhẹ dưới nút như hình 1
+        shadow = QtWidgets.QGraphicsDropShadowEffect()
+        shadow.setBlurRadius(15)
+        shadow.setXOffset(0)
+        shadow.setYOffset(4)
+        shadow.setColor(QtGui.QColor(34, 197, 94, 80)) # Màu xanh lá nhạt
+        self.button_continue.setGraphicsEffect(shadow)
+        self.button_continue.setObjectName("button_continue")
+        self.layoutWidget1 = QtWidgets.QWidget(parent=self.today_lsn)
+        self.layoutWidget1.setGeometry(QtCore.QRect(50, 10, 98, 29))
+        self.layoutWidget1.setObjectName("layoutWidget1")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.layoutWidget1)
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.label_8 = QtWidgets.QLabel(parent=self.layoutWidget1)
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_8.setFont(font)
+        self.label_8.setStyleSheet("QLabel { background:transparent; color:black; font-size:10px; font-weight:700; border:none; }")
+        self.label_8.setObjectName("label_8")
+        self.verticalLayout_2.addWidget(self.label_8)
+        self.label_9 = QtWidgets.QLabel(parent=self.layoutWidget1)
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.label_9.setFont(font)
+        self.label_9.setStyleSheet("QLabel { color:#8d8d8d; font-size:8px; background:transparent; }")
+        self.label_9.setObjectName("label_9")
+        self.verticalLayout_2.addWidget(self.label_9)
+        self.layoutWidget2 = QtWidgets.QWidget(parent=self.today_lsn)
+        self.layoutWidget2.setGeometry(QtCore.QRect(10, 40, 181, 51))
+        self.layoutWidget2.setObjectName("layoutWidget2")
+        self.gridLayout = QtWidgets.QGridLayout(self.layoutWidget2)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.progressBar_2 = QtWidgets.QProgressBar(parent=self.layoutWidget2)
+        self.progressBar_2.setMaximumSize(QtCore.QSize(171, 10))
+        self.progressBar_2.setStyleSheet("\n"
+"       QProgressBar { background:#e5e5e5; border:none; border-radius:3px; }\n"
+"       QProgressBar::chunk { background:#35b653; border-radius:3px; margin:0px; }\n"
+"      ")
+        self.progressBar_2.setProperty("value", 65)
+        self.progressBar_2.setTextVisible(False)
+        self.progressBar_2.setObjectName("progressBar_2")
+        self.gridLayout.addWidget(self.progressBar_2, 1, 0, 1, 2)
+        self.label_progress = QtWidgets.QLabel(parent=self.layoutWidget2)
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.label_progress.setFont(font)
+        self.label_progress.setStyleSheet("QLabel { color:#8d8d8d; font-size:8px; background:transparent; }")
+        self.label_progress.setObjectName("label_progress")
+        self.gridLayout.addWidget(self.label_progress, 2, 0, 1, 1)
+        self.label_10 = QtWidgets.QLabel(parent=self.layoutWidget2)
+        font = QtGui.QFont()
+        font.setFamily("Inter")
+        font.setPointSize(8)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_10.setFont(font)
+        self.label_10.setStyleSheet("QLabel { background:transparent; }")
+        self.label_10.setObjectName("label_10")
+        self.gridLayout.addWidget(self.label_10, 0, 0, 1, 1)
+        self.label_12 = QtWidgets.QLabel(parent=self.layoutWidget2)
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_12.setFont(font)
+        self.label_12.setStyleSheet("QLabel { color:#24c45d; font-size:8px; font-weight:700; background:transparent; }")
+        self.label_12.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight|QtCore.Qt.AlignmentFlag.AlignTrailing|QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.label_12.setObjectName("label_12")
+        self.gridLayout.addWidget(self.label_12, 2, 1, 1, 1)
+        self.streak = QtWidgets.QFrame(parent=self.centralwidget)
+        self.streak.setGeometry(QtCore.QRect(680, 20, 91, 131))
+        self.streak.setStyleSheet("QFrame#streak { background:white; border-radius:16px; }")
+        self.streak.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.streak.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.streak.setObjectName("streak")
+        self.label_11 = QtWidgets.QLabel(parent=self.streak)
+        self.label_11.setGeometry(QtCore.QRect(5, 10, 81, 16))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_11.setFont(font)
+        self.label_11.setStyleSheet("QLabel { background:transparent; color:black; font-size:10px; font-weight:700; border:none; }")
+        self.label_11.setObjectName("label_11")
+        self.label_13 = QtWidgets.QLabel(parent=self.streak)
+        self.label_13.setGeometry(QtCore.QRect(60, 10, 31, 51))
+        self.label_13.setStyleSheet("QLabel { background:transparent; font-size:20px; }")
+        self.label_13.setObjectName("label_13")
+        self.layoutWidget3 = QtWidgets.QWidget(parent=self.streak)
+        self.layoutWidget3.setGeometry(QtCore.QRect(10, 40, 71, 81))
+        self.layoutWidget3.setObjectName("layoutWidget3")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.layoutWidget3)
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.streak_day = QtWidgets.QLabel(parent=self.layoutWidget3)
+        font = QtGui.QFont()
+        font.setPointSize(32)
+        font.setBold(True)
+        font.setWeight(75)
+        self.streak_day.setFont(font)
+        self.streak_day.setStyleSheet("QLabel { color:#ff6b6b; background:transparent; }")
+        self.streak_day.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.streak_day.setObjectName("streak_day")
+        self.verticalLayout.addWidget(self.streak_day)
+        self.label_16 = QtWidgets.QLabel(parent=self.layoutWidget3)
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.label_16.setFont(font)
+        self.label_16.setStyleSheet("QLabel { color:#8d8d8d; font-size:8px; background:transparent; }")
+        self.label_16.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_16.setObjectName("label_16")
+        self.verticalLayout.addWidget(self.label_16)
+        self.label_15 = QtWidgets.QLabel(parent=self.layoutWidget3)
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.label_15.setFont(font)
+        self.label_15.setStyleSheet("QLabel { color:#8d8d8d; font-size:8px; background:transparent; }")
+        self.label_15.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_15.setObjectName("label_15")
+        self.verticalLayout.addWidget(self.label_15)
+        self.label_11.raise_()
+        self.layoutWidget.raise_()
+        self.label_13.raise_()
+        self.frame_4 = QtWidgets.QFrame(parent=self.centralwidget)
+        self.frame_4.setGeometry(QtCore.QRect(780, 20, 151, 131))
+        self.frame_4.setStyleSheet("QFrame#frame_4 { background:white; border-radius:16px; }")
+        self.frame_4.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame_4.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame_4.setObjectName("frame_4")
+        self.label_14 = QtWidgets.QLabel(parent=self.frame_4)
+        self.label_14.setGeometry(QtCore.QRect(5, 10, 81, 16))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_14.setFont(font)
+        self.label_14.setStyleSheet("QLabel { background:transparent; color:black; font-size:10px; font-weight:700; border:none; }")
+        self.label_14.setObjectName("label_14")
+        self.layoutWidget4 = QtWidgets.QWidget(parent=self.frame_4)
+        self.layoutWidget4.setGeometry(QtCore.QRect(5, 30, 141, 91))
+        self.layoutWidget4.setObjectName("layoutWidget4")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.layoutWidget4)
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.label_17 = QtWidgets.QLabel(parent=self.layoutWidget4)
+        self.label_17.setStyleSheet("QLabel { background:#fff7ed; border-radius:8px; font-size:18px; }")
+        self.label_17.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_17.setObjectName("label_17")
+        self.gridLayout_2.addWidget(self.label_17, 0, 0, 1, 1)
+        self.label_18 = QtWidgets.QLabel(parent=self.layoutWidget4)
+        self.label_18.setStyleSheet("QLabel { background:#ede9fe; border-radius:8px; font-size:18px; }")
+        self.label_18.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_18.setObjectName("label_18")
+        self.gridLayout_2.addWidget(self.label_18, 0, 1, 1, 1)
+        self.label_27 = QtWidgets.QLabel(parent=self.layoutWidget4)
+        self.label_27.setStyleSheet("QLabel { background:#dff1e6; border-radius:8px; font-size:18px; }")
+        self.label_27.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_27.setObjectName("label_27")
+        self.gridLayout_2.addWidget(self.label_27, 0, 2, 1, 1)
+        self.label_19 = QtWidgets.QLabel(parent=self.layoutWidget4)
+        self.label_19.setStyleSheet("QLabel { background:#fef9c3; border-radius:8px; font-size:18px; }")
+        self.label_19.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_19.setObjectName("label_19")
+        self.gridLayout_2.addWidget(self.label_19, 1, 0, 1, 1)
+        self.label_20 = QtWidgets.QLabel(parent=self.layoutWidget4)
+        self.label_20.setStyleSheet("QLabel { background:#dff1e6; border-radius:8px; font-size:18px; }")
+        self.label_20.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_20.setObjectName("label_20")
+        self.gridLayout_2.addWidget(self.label_20, 1, 1, 1, 1)
+        self.wodd = QtWidgets.QFrame(parent=self.centralwidget)
+        self.wodd.setGeometry(QtCore.QRect(250, 160, 351, 171))
+        self.wodd.setStyleSheet("QFrame#wodd { background:white; border-radius:16px; }")
+        self.wodd.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.wodd.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.wodd.setObjectName("wodd")
+        self.label_22 = QtWidgets.QLabel(parent=self.wodd)
+        self.label_22.setGeometry(QtCore.QRect(10, 10, 21, 21))
+        self.label_22.setStyleSheet("QLabel { background:#dff1e6; color:#22c55e; border-radius:8px; font-size:12px; }")
+        self.label_22.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_22.setObjectName("label_22")
+        self.label_21 = QtWidgets.QLabel(parent=self.wodd)
+        self.label_21.setGeometry(QtCore.QRect(38, 10, 111, 16))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_21.setFont(font)
+        self.label_21.setStyleSheet("QLabel { background:transparent; color:black; font-size:10px; font-weight:700; border:none; }")
+        self.label_21.setObjectName("label_21")
+        self.frame = QtWidgets.QFrame(parent=self.wodd)
+        self.frame.setGeometry(QtCore.QRect(10, 40, 331, 121))
+        self.frame.setStyleSheet("\n"
+"       QFrame#frame {\n"
+"        border-radius:16px;\n"
+"        background:qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:1,\n"
+"         stop:0 rgba(155,255,153,42),stop:0.8 rgba(205,220,57,37),stop:1 rgba(220,220,220,118));\n"
+"       }\n"
+"      ")
+        self.frame.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame.setObjectName("frame")
+        self.frame_2 = QtWidgets.QFrame(parent=self.frame)
+        self.frame_2.setGeometry(QtCore.QRect(10, 72, 301, 41))
+        self.frame_2.setStyleSheet("QFrame#frame_2 { background:#ffffff; border:none; border-radius:8px; }")
+        self.frame_2.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.label_ex = QtWidgets.QLabel(parent=self.frame_2)
+        self.label_ex.setGeometry(QtCore.QRect(10, 5, 71, 16))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.label_ex.setFont(font)
+        self.label_ex.setStyleSheet("QLabel { background:transparent; color:#7c8a7e; font-size:8px; border:none; }")
+        self.label_ex.setObjectName("label_ex")
+        self.label_ex2 = QtWidgets.QLabel(parent=self.frame_2)
+        self.label_ex2.setGeometry(QtCore.QRect(10, 20, 261, 16))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.label_ex2.setFont(font)
+        self.label_ex2.setStyleSheet("QLabel { background:transparent; color:#1f1f1f; font-size:8px; border:none; }")
+        self.label_ex2.setObjectName("label_ex2")
+        self.layoutWidget5 = QtWidgets.QWidget(parent=self.frame)
+        self.layoutWidget5.setGeometry(QtCore.QRect(15, 8, 301, 61))
+        self.layoutWidget5.setObjectName("layoutWidget5")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.layoutWidget5)
+        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.label_23 = QtWidgets.QLabel(parent=self.layoutWidget5)
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_23.setFont(font)
+        self.label_23.setStyleSheet("QLabel { background:transparent; color:#2fc463; font-size:20px; font-weight:700; border:none; }")
+        self.label_23.setObjectName("label_23")
+        self.verticalLayout_3.addWidget(self.label_23)
+        self.label_phienam = QtWidgets.QLabel(parent=self.layoutWidget5)
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.label_phienam.setFont(font)
+        self.label_phienam.setStyleSheet("QLabel { background:transparent; color:#7c8a7e; font-size:8px; border:none; }")
+        self.label_phienam.setObjectName("label_phienam")
+        self.verticalLayout_3.addWidget(self.label_phienam)
+        self.label_defi = QtWidgets.QLabel(parent=self.layoutWidget5)
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.label_defi.setFont(font)
+        self.label_defi.setStyleSheet("QLabel { background:transparent; color:#1f1f1f; font-size:8px; border:none; }")
+        self.label_defi.setObjectName("label_defi")
+        self.verticalLayout_3.addWidget(self.label_defi)
+        self.motivate = QtWidgets.QFrame(parent=self.centralwidget)
+        self.motivate.setGeometry(QtCore.QRect(610, 160, 321, 171))
+        self.motivate.setStyleSheet("QFrame#motivate { background:white; border-radius:16px; }")
+        self.motivate.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.motivate.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.motivate.setObjectName("motivate")
+        self.label_25 = QtWidgets.QLabel(parent=self.motivate)
+        self.label_25.setGeometry(QtCore.QRect(20, 10, 21, 21))
+        self.label_25.setStyleSheet("QLabel { background:#dff1e6; color:#22c55e; border-radius:8px; font-size:12px; }")
+        self.label_25.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_25.setObjectName("label_25")
+        self.label_24 = QtWidgets.QLabel(parent=self.motivate)
+        self.label_24.setGeometry(QtCore.QRect(48, 10, 111, 16))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_24.setFont(font)
+        self.label_24.setStyleSheet("QLabel { background:transparent; color:black; font-size:10px; font-weight:700; border:none; }")
+        self.label_24.setObjectName("label_24")
+        self.moti_title = QtWidgets.QTextEdit(parent=self.motivate)
+        self.moti_title.setGeometry(QtCore.QRect(80, 60, 196, 41))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(75)
+        self.moti_title.setFont(font)
+        self.moti_title.setStyleSheet("QTextEdit { background:transparent; border:none; font-size:10px; font-weight:600; color:#1f2937; }")
+        self.moti_title.setReadOnly(True)
+        self.moti_title.setObjectName("moti_title")
+        self.label_moti_2 = QtWidgets.QLabel(parent=self.motivate)
+        self.label_moti_2.setGeometry(QtCore.QRect(85, 100, 65, 18))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_moti_2.setFont(font)
+        self.label_moti_2.setStyleSheet("QLabel { background:#dff1e6; color:#22c55e; border-radius:8px; font-size:8px; font-weight:700; padding:4px 10px; }")
+        self.label_moti_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_moti_2.setObjectName("label_moti_2")
+        self.Inspiring = QtWidgets.QLabel(parent=self.motivate)
+        self.Inspiring.setGeometry(QtCore.QRect(158, 100, 80, 18))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.Inspiring.setFont(font)
+        self.Inspiring.setStyleSheet("QLabel { background:#fee2e2; color:#b91c1c; border-radius:8px; font-size:8px; font-weight:700; padding:4px 10px; }")
+        self.Inspiring.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.Inspiring.setObjectName("Inspiring")
+        self.label_26 = QtWidgets.QLabel(parent=self.motivate)
+        self.label_26.setGeometry(QtCore.QRect(-40, 20, 171, 141))
+        font = QtGui.QFont()
+        font.setFamily("Inter")
+        self.label_26.setFont(font)
+        self.label_26.setStyleSheet("QLabel{background:transparent}")
+        self.label_26.setText("")
+        self.label_26.setPixmap(QtGui.QPixmap("Account page\\../../../../../Users/admin/Pictures/my pic/hihi.png"))
+        self.label_26.setScaledContents(True)
+        self.label_26.setObjectName("label_26")
+        self.frame_8 = QtWidgets.QFrame(parent=self.centralwidget)
+        self.frame_8.setGeometry(QtCore.QRect(250, 340, 681, 211))
+        font = QtGui.QFont()
+        font.setFamily("Inter")
+        self.frame_8.setFont(font)
+        self.frame_8.setStyleSheet("QFrame#frame_8 { background:white; border-radius:16px; }")
+        self.frame_8.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame_8.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame_8.setObjectName("frame_8")
+        self.label_28 = QtWidgets.QLabel(parent=self.frame_8)
+        self.label_28.setGeometry(QtCore.QRect(10, 10, 21, 21))
+        self.label_28.setStyleSheet("QLabel { background:#dff1e6; color:#22c55e; border-radius:8px; font-size:12px; }")
+        self.label_28.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_28.setObjectName("label_28")
+        self.frm_chart = QtWidgets.QFrame(parent=self.frame_8)
+        self.frm_chart.setGeometry(QtCore.QRect(10, 40, 351, 161))
+        self.frm_chart.setStyleSheet("QFrame{ background:#fafafa; border-radius:12px; border:1px dashed #d1d5db; }")
+        self.frm_chart.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frm_chart.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frm_chart.setObjectName("frm_chart")
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.frm_chart)
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.frm_stats = QtWidgets.QFrame(parent=self.frame_8)
+        self.frm_stats.setGeometry(QtCore.QRect(365, 0, 311, 201))
+        self.frm_stats.setStyleSheet("QFrame#frm_stats { background:white; border-radius:16px; }")
+        self.frm_stats.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frm_stats.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frm_stats.setObjectName("frm_stats")
+        self.label_31 = QtWidgets.QLabel(parent=self.frm_stats)
+        self.label_31.setGeometry(QtCore.QRect(10, 20, 151, 21))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_31.setFont(font)
+        self.label_31.setStyleSheet("QLabel { background:transparent; color:#6b7280; font-size:10px; font-weight:700; border:none; } ")
+        self.label_31.setObjectName("label_31")
+        self.label_analytics = QtWidgets.QLabel(parent=self.frm_stats)
+        self.label_analytics.setGeometry(QtCore.QRect(250, 10, 61, 28))
+        font_75 = QtGui.QFont()
+        font_75.setPointSize(39) 
+        font_75.setBold(True)
+        self.label_analytics.setFont(font_75)
+        self.label_analytics.setStyleSheet("QLabel { color:#24c45d; font-size:20px; font-weight:700; background:white; }")
+        self.label_analytics.setObjectName("label_analytics")
+        self.frame_3 = QtWidgets.QFrame(parent=self.frm_stats)
+        self.frame_3.setGeometry(QtCore.QRect(5, 48, 291, 131))
+        self.frame_3.setStyleSheet("\n"
+"        QFrame#frame_3 {\n"
+"         border-radius:12px;\n"
+"         background:qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:1,\n"
+"          stop:0 rgba(155,255,153,19),stop:0.8 rgba(205,220,57,12),stop:1 rgba(220,220,220,31));\n"
+"        }\n"
+"       ")
+        self.frame_3.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame_3.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame_3.setObjectName("frame_3")
+        self.label_phienam_2 = QtWidgets.QLabel(parent=self.frame_3)
+        self.label_phienam_2.setGeometry(QtCore.QRect(90, 0, 131, 16))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.label_phienam_2.setFont(font)
+        self.label_phienam_2.setStyleSheet("QLabel { background:transparent; color:#7c8a7e; font-size:12px; border:none; }")
+        self.label_phienam_2.setObjectName("label_phienam_2")
+        self.label_34 = QtWidgets.QLabel(parent=self.frame_3)
+        self.label_34.setGeometry(QtCore.QRect(8, 30, 14, 14))
+        self.label_34.setStyleSheet("QLabel { background:#22c55e; border-radius:7px; }")
+        self.label_34.setText("")
+        self.label_34.setObjectName("label_34")
+        self.frame_5 = QtWidgets.QFrame(parent=self.frame_3)
+        self.frame_5.setGeometry(QtCore.QRect(28, 22, 245, 31))
+        self.frame_5.setStyleSheet("QFrame { background:#ffffff; border:none; border-radius:8px; }")
+        self.frame_5.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame_5.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame_5.setObjectName("frame_5")
+        self.label_33 = QtWidgets.QLabel(parent=self.frame_5)
+        self.label_33.setGeometry(QtCore.QRect(8, 1, 71, 14))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_33.setFont(font)
+        self.label_33.setStyleSheet("QLabel { background:transparent; color:black; font-size:9px; font-weight:700; border:none; }")
+        self.label_33.setObjectName("label_33")
+        self.label_ex_2 = QtWidgets.QLabel(parent=self.frame_5)
+        self.label_ex_2.setGeometry(QtCore.QRect(8, 16, 151, 12))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.label_ex_2.setFont(font)
+        self.label_ex_2.setStyleSheet("QLabel { background:transparent; color:#7c8a7e; font-size:8px; border:none; }")
+        self.label_ex_2.setObjectName("label_ex_2")
+        self.lbl_mastered_pct = QtWidgets.QLabel(parent=self.frame_5)
+        self.lbl_mastered_pct.setGeometry(QtCore.QRect(210, 8, 31, 14))
+        self.lbl_mastered_pct.setStyleSheet("QLabel { background:transparent; color:#22c55e; font-size:9px; font-weight:700; border:none; }")
+        self.lbl_mastered_pct.setObjectName("lbl_mastered_pct")
+        self.label_37 = QtWidgets.QLabel(parent=self.frame_3)
+        self.label_37.setGeometry(QtCore.QRect(8, 64, 14, 14))
+        self.label_37.setStyleSheet("QLabel { background:#4caf50; border-radius:7px; }")
+        self.label_37.setText("")
+        self.label_37.setObjectName("label_37")
+        self.frame_6 = QtWidgets.QFrame(parent=self.frame_3)
+        self.frame_6.setGeometry(QtCore.QRect(28, 57, 245, 31))
+        self.frame_6.setStyleSheet("QFrame { background:#ffffff; border:none; border-radius:8px; }")
+        self.frame_6.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame_6.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame_6.setObjectName("frame_6")
+        self.label_35 = QtWidgets.QLabel(parent=self.frame_6)
+        self.label_35.setGeometry(QtCore.QRect(8, 1, 71, 14))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_35.setFont(font)
+        self.label_35.setStyleSheet("QLabel { background:transparent; color:black; font-size:10px; font-weight:700; border:none; }")
+        self.label_35.setObjectName("label_35")
+        self.label_ex_3 = QtWidgets.QLabel(parent=self.frame_6)
+        self.label_ex_3.setGeometry(QtCore.QRect(8, 16, 151, 12))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.label_ex_3.setFont(font)
+        self.label_ex_3.setStyleSheet("QLabel { background:transparent; color:#7c8a7e; font-size:8px; border:none; }")
+        self.label_ex_3.setObjectName("label_ex_3")
+        self.lbl_learning_pct = QtWidgets.QLabel(parent=self.frame_6)
+        self.lbl_learning_pct.setGeometry(QtCore.QRect(210, 8, 31, 14))
+        self.lbl_learning_pct.setStyleSheet("QLabel { background:transparent; color:#22c55e; font-size:9px; font-weight:700; border:none; }")
+        self.lbl_learning_pct.setObjectName("lbl_learning_pct")
+        self.label_38 = QtWidgets.QLabel(parent=self.frame_3)
+        self.label_38.setGeometry(QtCore.QRect(8, 98, 14, 14))
+        self.label_38.setStyleSheet("QLabel { background:#aed581; border-radius:7px; }")
+        self.label_38.setText("")
+        self.label_38.setObjectName("label_38")
+        self.frame_7 = QtWidgets.QFrame(parent=self.frame_3)
+        self.frame_7.setGeometry(QtCore.QRect(28, 91, 245, 31))
+        self.frame_7.setStyleSheet("QFrame { background:#ffffff; border:none; border-radius:8px; }")
+        self.frame_7.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame_7.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame_7.setObjectName("frame_7")
+        self.label_36 = QtWidgets.QLabel(parent=self.frame_7)
+        self.label_36.setGeometry(QtCore.QRect(8, 1, 71, 14))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_36.setFont(font)
+        self.label_36.setStyleSheet("QLabel { background:transparent; color:black; font-size:10px; font-weight:700; border:none; }")
+        self.label_36.setObjectName("label_36")
+        self.label_ex_4 = QtWidgets.QLabel(parent=self.frame_7)
+        self.label_ex_4.setGeometry(QtCore.QRect(8, 16, 151, 12))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.label_ex_4.setFont(font)
+        self.label_ex_4.setStyleSheet("QLabel { background:transparent; color:#7c8a7e; font-size:8px; border:none; }")
+        self.label_ex_4.setObjectName("label_ex_4")
+        self.lbl_new_pct = QtWidgets.QLabel(parent=self.frame_7)
+        self.lbl_new_pct.setGeometry(QtCore.QRect(210, 8, 31, 14))
+        self.lbl_new_pct.setStyleSheet("QLabel { background:transparent; color:#22c55e; font-size:9px; font-weight:700; border:none; }")
+        self.lbl_new_pct.setObjectName("lbl_new_pct")
+        self.layoutWidget6 = QtWidgets.QWidget(parent=self.frame_8)
+        self.layoutWidget6.setGeometry(QtCore.QRect(38, 10, 122, 29))
+        self.layoutWidget6.setObjectName("layoutWidget6")
+        self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.layoutWidget6)
+        self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_5.setObjectName("verticalLayout_5")
+        self.label_29 = QtWidgets.QLabel(parent=self.layoutWidget6)
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_29.setFont(font)
+        self.label_29.setStyleSheet("QLabel { background:transparent; color:black; font-size:10px; font-weight:700; border:none; }")
+        self.label_29.setObjectName("label_29")
+        self.verticalLayout_5.addWidget(self.label_29)
+        self.label_30 = QtWidgets.QLabel(parent=self.layoutWidget6)
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        font.setBold(True)
+        font.setWeight(87)
+        self.label_30.setFont(font)
+        self.label_30.setStyleSheet("QLabel { background:transparent; color:#6b7280; font-size:8px; font-weight:700; border:none;}")
+        self.label_30.setObjectName("label_30")
+        self.verticalLayout_5.addWidget(self.label_30)
+        self.pushButton_6 = QtWidgets.QPushButton(parent=self.centralwidget)
+        self.pushButton_6.setGeometry(QtCore.QRect(940, 20, 21, 21))
+        self.pushButton_6.setStyleSheet("\n"
+"       QPushButton { background:#e9e9e9; border:none; border-radius:6px; font-size:14px; color:#222; }\n"
+"       QPushButton:hover { background:#dfdfdf; }\n"
+"       QPushButton:pressed { background:#c8c8c8; }\n"
+"      ")
+        self.pushButton_6.setObjectName("pushButton_6")
+        self.frame_8.raise_()
+        self.user_frm.raise_()
+        self.today_lsn.raise_()
+        self.streak.raise_()
+        self.frame_4.raise_()
+        self.wodd.raise_()
+        self.motivate.raise_()
+        self.user_frm_2.raise_()
+        self.pushButton_6.raise_()
+
+        # ==========================================================
+        # BẮT ĐẦU PHẦN CHỈNH SỬA LAYOUT VÀ LÒ XO (SPACER)
+        # ==========================================================
+
+        # --- Kích thước tối thiểu để không bị xẹp ---
+        self.user_frm_2.setMinimumWidth(240)
+        self.user_frm_2.setSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Expanding)
+
+        self.user_frm.setMinimumSize(180, 100)
+        self.user_frm.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Fixed)
+
+        self.today_lsn.setMinimumSize(180, 120)
+        self.today_lsn.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Fixed)
+
+        self.streak.setMinimumSize(90, 120)
+        self.streak.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Fixed)
+
+        self.frame_4.setMinimumSize(140, 120)
+        self.frame_4.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Fixed)
+
+        self.wodd.setMinimumSize(300, 200) # Tăng chiều cao cơ sở lên 200
+        # Đổi Policy.Fixed (Khóa cứng) thành Policy.Expanding (Cho phép dãn tự do)
+        self.wodd.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
+
+        self.motivate.setMinimumSize(280, 200)
+        self.motivate.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
+
+        self.frame_8.setMinimumSize(600, 200)
+        self.frame_8.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
+
+        self.frame_10.setMinimumSize(200, 260)
+        self.frame_10.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Fixed)
+
+        self.frame_9.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Fixed)
+
+        # ==========================================================
+        # 1. LAYOUT GỐC: Chia đôi màn hình trái / phải
+        # ==========================================================
+        main_layout = QtWidgets.QHBoxLayout(self.centralwidget)
+        main_layout.setContentsMargins(10, 10, 10, 10)
+        main_layout.setSpacing(10)
+
+        # ==========================================================
+        # 2. CỘT TRÁI (Sidebar cố định)
+        # ==========================================================
+        main_layout.addWidget(self.user_frm_2)
+
+        left_layout = QtWidgets.QVBoxLayout(self.user_frm_2)
+        left_layout.setContentsMargins(10, 15, 10, 15)
+        left_layout.setSpacing(10)
+
+        # Tiêu đề "Data Visualization"
+        left_layout.addWidget(self.label_39)
+
+        # Grid 2x2 nút chart
+        grid_btns = QtWidgets.QGridLayout(self.frame_9)
+        grid_btns.setSpacing(6)
+        grid_btns.addWidget(self.pushButton_2, 0, 0)
+        grid_btns.addWidget(self.pushButton_3, 0, 1)
+        grid_btns.addWidget(self.pushButton_4, 1, 0)
+        grid_btns.addWidget(self.pushButton_5, 1, 1)
+        left_layout.addWidget(self.frame_9)
+
+        # Spacer đẩy Export xuống đáy
+        left_layout.addStretch(1)
+
+        # Khung Export Analytics
+        export_layout = QtWidgets.QVBoxLayout(self.frame_10)
+        export_layout.setContentsMargins(10, 10, 10, 10)
+        export_layout.setSpacing(8)
+
+        export_layout.addWidget(self.label_40)  # "● Export Analytics"
+
+        for icon_lbl, item_frame in [
+            (self.label_42, self.frame_11),   # CSV
+            (self.label_46, self.frame_12),   # JSON
+            (self.label_47, self.frame_13),   # XML
+            (self.label_48, self.frame_14),   # XLS
+        ]:
+            row = QtWidgets.QHBoxLayout()
+            row.setSpacing(6)
+            icon_lbl.setFixedSize(32, 32)
+            row.addWidget(icon_lbl)
+            item_frame.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Fixed)
+            item_frame.setMinimumHeight(40)
+            row.addWidget(item_frame, stretch=1)
+            export_layout.addLayout(row)
+
+        export_layout.addStretch(1)
+        export_layout.addWidget(self.noti_dowload)
+        export_layout.addWidget(self.button_continue_2)
+
+        left_layout.addWidget(self.frame_10)
+
+        # ==========================================================
+        # 3. CỘT PHẢI (Nội dung chính — dãn theo cửa sổ)
+        # ==========================================================
+        right_col_widget = QtWidgets.QWidget(self.centralwidget)
+        right_col_widget.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
+        right_layout = QtWidgets.QVBoxLayout(right_col_widget)
+        right_layout.setContentsMargins(0, 0, 0, 0)
+        right_layout.setSpacing(10)
+        main_layout.addWidget(right_col_widget, stretch=1)
+
+        # --- Hàng 0: Nút X (góc phải trên) ---
+        top_bar_layout = QtWidgets.QHBoxLayout()
+        top_bar_layout.addStretch(1)
+        top_bar_layout.addWidget(self.pushButton_6)
+        right_layout.addLayout(top_bar_layout)
+
+        # ==========================================================
+        # HÀNG 1: 4 thẻ thống kê — user / lesson / streak / achievement
+        # ==========================================================
+        row1_layout = QtWidgets.QHBoxLayout()
+        row1_layout.setSpacing(10)
+
+        # --- user_frm: avatar + tên + level + progress ---
+        uf_layout = QtWidgets.QVBoxLayout(self.user_frm)
+        uf_layout.setContentsMargins(10, 10, 10, 10)
+        uf_layout.setSpacing(6)
+
+        uf_top = QtWidgets.QHBoxLayout()
+        uf_top.setSpacing(8)
+        self.label.setFixedSize(32, 32)
+        uf_top.addWidget(self.label)       # avatar icon
+
+        uf_name_col = QtWidgets.QVBoxLayout()
+        uf_name_col.setSpacing(2)
+        uf_name_row = QtWidgets.QHBoxLayout()
+        uf_name_row.setSpacing(4)
+        uf_name_row.addWidget(self.label_2)   # "Username"
+        uf_name_row.addWidget(self.label_3)   # "Level 1" badge
+        uf_name_row.addWidget(self.label_4)   # "Beginner"
+        uf_name_row.addStretch()
+        uf_name_col.addLayout(uf_name_row)
+        uf_top.addLayout(uf_name_col)
+        uf_top.addStretch()
+        uf_layout.addLayout(uf_top)
+
+        uf_prog_row = QtWidgets.QHBoxLayout()
+        uf_prog_row.addWidget(self.label_5)   # "Level progress"
+        uf_prog_row.addStretch()
+        uf_prog_row.addWidget(self.label_6)   # "78%"
+        uf_layout.addLayout(uf_prog_row)
+
+        self.progressBar.setMaximumWidth(16777215)
+        self.progressBar.setMaximumHeight(10)
+        uf_layout.addWidget(self.progressBar)
+
+        row1_layout.addWidget(self.user_frm, stretch=3)
+
+        # --- today_lsn: lesson title + progress bar + button ---
+        lsn_layout = QtWidgets.QVBoxLayout(self.today_lsn)
+        lsn_layout.setContentsMargins(10, 10, 10, 10)
+        lsn_layout.setSpacing(6)
+
+        lsn_header = QtWidgets.QHBoxLayout()
+        lsn_header.setSpacing(8)
+        self.label_7.setFixedSize(32, 32)
+        lsn_header.addWidget(self.label_7)    # icon 📖
+
+        lsn_title_col = QtWidgets.QVBoxLayout()
+        lsn_title_col.setSpacing(2)
+        lsn_title_col.addWidget(self.label_8) # "Today's Lesson"
+        lsn_title_col.addWidget(self.label_9) # "Unit 3: ..."
+        lsn_header.addLayout(lsn_title_col)
+        lsn_header.addStretch()
+        lsn_layout.addLayout(lsn_header)
+
+        self.progressBar_2.setMaximumWidth(16777215)
+        self.progressBar_2.setMaximumHeight(10)
+        lsn_layout.addWidget(self.progressBar_2)
+
+        lsn_pct_row = QtWidgets.QHBoxLayout()
+        lsn_pct_row.addWidget(self.label_10)       # "Lesson Progress"
+        lsn_pct_row.addStretch()
+        lsn_pct_row.addWidget(self.label_progress) # "13 of 20 exercises"
+        lsn_pct_row.addWidget(self.label_12)       # "65%"
+        lsn_layout.addLayout(lsn_pct_row)
+
+        lsn_layout.addWidget(self.button_continue)
+
+        row1_layout.addWidget(self.today_lsn, stretch=3)
+
+        # --- streak: icon lửa + số ngày ---
+        sk_layout = QtWidgets.QVBoxLayout(self.streak)
+        sk_layout.setContentsMargins(8, 8, 8, 8)
+        sk_layout.setSpacing(4)
+
+        sk_top = QtWidgets.QHBoxLayout()
+        sk_top.addWidget(self.label_11)   # "Current Streak"
+        sk_top.addStretch()
+        sk_top.addWidget(self.label_13)   # 🔥
+        sk_layout.addLayout(sk_top)
+
+        sk_layout.addWidget(self.streak_day, alignment=Qt.AlignmentFlag.AlignCenter)   # "7"
+        sk_layout.addWidget(self.label_16, alignment=Qt.AlignmentFlag.AlignCenter)     # "days in a row"
+        sk_layout.addWidget(self.label_15, alignment=Qt.AlignmentFlag.AlignCenter)     # "Best: 14 days"
+        sk_layout.addStretch()
+
+        row1_layout.addWidget(self.streak, stretch=2)
+
+        # --- frame_4: Achievements badges ---
+        ach_layout = QtWidgets.QVBoxLayout(self.frame_4)
+        ach_layout.setContentsMargins(8, 8, 8, 8)
+        ach_layout.setSpacing(6)
+
+        ach_layout.addWidget(self.label_14)   # "Achievements"
+
+        # layoutWidget4 đã có gridLayout_2 bên trong — nhúng thẳng vào
+        self.layoutWidget4.setParent(self.frame_4)
+        self.layoutWidget4.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
+        ach_layout.addWidget(self.layoutWidget4, stretch=1)
+
+        row1_layout.addWidget(self.frame_4, stretch=2)
+
+        right_layout.addLayout(row1_layout)
+
+       # ==========================================================
+        # HÀNG 2: Word of the Day + Daily Motivation
+        # ==========================================================
+        row2_layout = QtWidgets.QHBoxLayout()
+        row2_layout.setSpacing(15)
+
+        # --- 1. WODD: Word of the Day ---
+        wodd_layout = QtWidgets.QVBoxLayout(self.wodd)
+        wodd_layout.setContentsMargins(15, 15, 15, 15)
+        wodd_layout.setSpacing(10)
+
+        # Tiêu đề WODD
+        wodd_header = QtWidgets.QHBoxLayout()
+        wodd_header.setSpacing(6)
+        self.label_22.setFixedSize(22, 22)
+        wodd_header.addWidget(self.label_22)   # 💡 icon
+        wodd_header.addWidget(self.label_21)   # "Word of the day!"
+        wodd_header.addStretch()               # Ép tiêu đề sang trái
+        wodd_layout.addLayout(wodd_header)
+
+        # FIX: KHUNG XANH LÁ (self.frame) - Đặt Layout để nội dung bên trong tự co dãn
+        self.frame.setParent(self.wodd)
+        self.frame.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
+        green_layout = QtWidgets.QVBoxLayout(self.frame)
+        green_layout.setContentsMargins(15, 15, 15, 15)
+        green_layout.setSpacing(10)
+
+        # Phần 1: Chữ Serendipity, phiên âm, định nghĩa (đã có sẵn trong layoutWidget5)
+        self.layoutWidget5.setParent(self.frame)
+        green_layout.addWidget(self.layoutWidget5)
+
+        # Phần 2: Khung trắng chứa Example (self.frame_2)
+        self.frame_2.setParent(self.frame)
+        self.frame_2.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
+        white_layout = QtWidgets.QVBoxLayout(self.frame_2)
+        white_layout.setContentsMargins(10, 8, 10, 8)
+        
+        self.label_ex.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Fixed)
+        white_layout.addWidget(self.label_ex)
+        
+        # Bật tính năng WordWrap tự động xuống dòng cho Example (phòng khi câu quá dài)
+        self.label_ex2.setWordWrap(True)
+        self.label_ex2.setAlignment(Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignLeft)
+        self.label_ex2.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
+        white_layout.addWidget(self.label_ex2, stretch=1)
+
+        # Nhúng Khung Trắng vào Khung Xanh Lá
+        green_layout.addWidget(self.frame_2, stretch=1)
+        
+        # Nhúng Khung Xanh Lá vào thẻ WODD
+        wodd_layout.addWidget(self.frame, stretch=1) 
+
+        row2_layout.addWidget(self.wodd, stretch=1)
+
+        # --- 2. MOTIVATE: Daily Motivation ---
+        moti_layout = QtWidgets.QVBoxLayout(self.motivate)
+        moti_layout.setContentsMargins(15, 15, 15, 15)
+        moti_layout.setSpacing(10)
+
+        # Tiêu đề Motivation
+        moti_header = QtWidgets.QHBoxLayout()
+        moti_header.setSpacing(6)
+        self.label_25.setFixedSize(22, 22)
+        moti_header.addWidget(self.label_25)   # ⚡ icon
+        moti_header.addWidget(self.label_24)   # "Daily Motivation"
+        moti_header.addStretch()               # Ép tiêu đề sang trái
+        moti_layout.addLayout(moti_header)
+
+        # Khối Nội dung (Dino bên trái, Chữ dãn đầy bên phải)
+        moti_content = QtWidgets.QHBoxLayout()
+        moti_content.setSpacing(15)
+
+        # --- Cột Trái: Ảnh Khủng long ---
+        self.label_26.setFixedSize(100, 100)
+        moti_content.addWidget(self.label_26, alignment=Qt.AlignmentFlag.AlignLeft | Qt.AlignmentFlag.AlignVCenter)
+
+        # --- Cột Phải: Dòng chữ và Tags ---
+        moti_text_layout = QtWidgets.QVBoxLayout()
+        moti_text_layout.setSpacing(8)
+        
+        # FIX 1: Lò xo ép từ TRÊN xuống
+        moti_text_layout.addStretch() 
+        
+        # Dòng chữ Quote (Chỉ cho phép dãn ngang, ép dọc lại mức tối thiểu)
+        self.moti_title.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.moti_title.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
+        # Tắt thanh cuộn để nó không bị hiện scrollbar xấu xí
+        self.moti_title.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        moti_text_layout.addWidget(self.moti_title)
+
+        # Hàng Tags
+        moti_tags = QtWidgets.QHBoxLayout()
+        moti_tags.addStretch() # Lò xo đẩy từ trái
+        moti_tags.addWidget(self.Inspiring)     # Tag Đỏ (Motivational)
+        moti_tags.addWidget(self.label_moti_2)  # Tag Xanh (Inspiring)
+        moti_tags.addStretch() # Lò xo đẩy từ phải
+        
+        moti_text_layout.addLayout(moti_tags)
+        
+        # FIX 2: Lò xo ép từ DƯỚI lên
+        moti_text_layout.addStretch() 
+        
+        moti_content.addLayout(moti_text_layout, stretch=1)
+        
+        moti_layout.addLayout(moti_content, stretch=1)
+
+        row2_layout.addWidget(self.motivate, stretch=1)
+
+        right_layout.addLayout(row2_layout)
+        # ==========================================================
+
+        # ==========================================================
+        # HÀNG 3: Analytics (Biểu đồ + Word Mastery)
+        # ==========================================================
+        analytics_h = QtWidgets.QHBoxLayout(self.frame_8)
+        analytics_h.setContentsMargins(10, 10, 10, 10)
+        analytics_h.setSpacing(10)
+
+        # frm_chart — biểu đồ bar
+        self.frm_chart.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
+        analytics_h.addWidget(self.frm_chart, stretch=1)
+
+        # frm_stats — Word Mastery Distribution
+        self.frm_stats.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
+
+        stats_layout = QtWidgets.QVBoxLayout(self.frm_stats)
+        stats_layout.setContentsMargins(10, 10, 10, 10)
+        stats_layout.setSpacing(6)
+
+        stats_top = QtWidgets.QHBoxLayout()
+        stats_top.addWidget(self.label_31)        # "Word Mastery Distribution"
+        stats_top.addWidget(self.label_analytics) # "75%"
+        stats_top.addStretch()
+        stats_layout.addLayout(stats_top)
+        stats_layout.addWidget(self.label_phienam_2)  # "Total Vocab Mastered"
+
+        # frame_3: 3 hàng Mastered / Learning / New Words
+        self.frame_3.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
+        frame3_layout = QtWidgets.QVBoxLayout(self.frame_3)
+        frame3_layout.setContentsMargins(8, 8, 8, 8)
+        frame3_layout.setSpacing(8)
+
+        for dot, item_frame in [
+            (self.label_34, self.frame_5),   # Mastered
+            (self.label_37, self.frame_6),   # Learning
+            (self.label_38, self.frame_7),   # New Words
+        ]:
+            item_row = QtWidgets.QHBoxLayout()
+            item_row.setSpacing(6)
+            dot.setFixedSize(14, 14)
+            item_row.addWidget(dot)
+            item_frame.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Fixed)
+            item_frame.setMinimumHeight(32)
+            item_row.addWidget(item_frame, stretch=1)
+            frame3_layout.addLayout(item_row)
+
+        frame3_layout.addStretch()
+        stats_layout.addWidget(self.frame_3, stretch=1)
+
+        analytics_h.addWidget(self.frm_stats, stretch=1)
+
+        right_layout.addWidget(self.frame_8, stretch=1)
+
+        # ==========================================================
+        # KẾT THÚC PHẦN CHỈNH SỬA
+        # ==========================================================
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.pushButton_2.setText(_translate("MainWindow", "📊\n"
+"Bar Chart"))
+        self.pushButton_3.setText(_translate("MainWindow", "🥧\n"
+"Pie Chart"))
+        self.pushButton_4.setText(_translate("MainWindow", "🔵\n"
+"Scatterplot"))
+        self.pushButton_5.setText(_translate("MainWindow", "📈\n"
+"Line Graph"))
+        self.label_40.setText(_translate("MainWindow", "● Export Analytics"))
+        self.label_42.setText(_translate("MainWindow", "CSV"))
+        self.label_41.setText(_translate("MainWindow", "CSV"))
+        self.label_ex_5.setText(_translate("MainWindow", "Comma-separated values"))
+        self.label_46.setText(_translate("MainWindow", "{}"))
+        self.label_43.setText(_translate("MainWindow", "JSON"))
+        self.label_ex_6.setText(_translate("MainWindow", "JavaScript object notation"))
+        self.label_47.setText(_translate("MainWindow", ">_"))
+        self.label_44.setText(_translate("MainWindow", "XML"))
+        self.label_ex_7.setText(_translate("MainWindow", "Extensible markup language"))
+        self.label_48.setText(_translate("MainWindow", "XLS"))
+        self.label_45.setText(_translate("MainWindow", "Excel"))
+        self.label_ex_8.setText(_translate("MainWindow", "Microsoft Excel spreadsheet"))
+        self.button_continue_2.setText(_translate("MainWindow", "⬇  Download Selected"))
+        self.label_39.setText(_translate("MainWindow", "Data Visualization"))
+        self.label.setText(_translate("MainWindow", "👤"))
+        self.label_2.setText(_translate("MainWindow", "Username"))
+        self.label_3.setText(_translate("MainWindow", "Level 1"))
+        self.label_4.setText(_translate("MainWindow", "Beginner"))
+        self.label_5.setText(_translate("MainWindow", "Level progress"))
+        self.label_6.setText(_translate("MainWindow", "78%"))
+        self.label_7.setText(_translate("MainWindow", "📖"))
+        self.button_continue.setText(_translate("MainWindow", "▶  Continue Lesson"))
+        self.label_8.setText(_translate("MainWindow", "Today\'s Lesson"))
+        self.label_9.setText(_translate("MainWindow", "Unit 3: Travel and culture"))
+        self.label_progress.setText(_translate("MainWindow", "13 of 20 exercises"))
+        self.label_10.setText(_translate("MainWindow", "Lesson Progress"))
+        self.label_12.setText(_translate("MainWindow", "65%"))
+        self.label_11.setText(_translate("MainWindow", "Current Streak"))
+        self.label_13.setText(_translate("MainWindow", "🔥"))
+        self.streak_day.setText(_translate("MainWindow", "7"))
+        self.label_16.setText(_translate("MainWindow", "days in a row"))
+        self.label_15.setText(_translate("MainWindow", "Best: 14 days"))
+        self.label_14.setText(_translate("MainWindow", "Achievements"))
+        self.label_17.setText(_translate("MainWindow", "🔥"))
+        self.label_18.setText(_translate("MainWindow", "📚"))
+        self.label_27.setText(_translate("MainWindow", "🏅"))
+        self.label_19.setText(_translate("MainWindow", "⭐"))
+        self.label_20.setText(_translate("MainWindow", "🏅"))
+        self.label_22.setText(_translate("MainWindow", "💡"))
+        self.label_21.setText(_translate("MainWindow", "Word of the day!"))
+        self.label_ex.setText(_translate("MainWindow", "Example:"))
+        self.label_ex2.setText(_translate("MainWindow", "Finding this app was pure serendipity!"))
+        self.label_23.setText(_translate("MainWindow", "Serendipity"))
+        self.label_phienam.setText(_translate("MainWindow", "/ˌser.ənˈdɪp.ə.ti/"))
+        self.label_defi.setText(_translate("MainWindow", "The occurrence of events by chance in a happy way"))
+        self.label_25.setText(_translate("MainWindow", "⚡"))
+        self.label_24.setText(_translate("MainWindow", "Daily Motivation"))
+        self.moti_title.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:10px; font-weight:600; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Inter\'; font-size:10pt;\">Every word you learn is a step closer to fluency!</span></p></body></html>"))
+        self.label_moti_2.setText(_translate("MainWindow", "Inspiring"))
+        self.Inspiring.setText(_translate("MainWindow", "Motivational"))
+        self.label_28.setText(_translate("MainWindow", "📊"))
+        self.label_31.setText(_translate("MainWindow", "Word Mastery Distribution"))
+        self.label_analytics.setText(_translate("MainWindow", "75%"))
+        self.label_phienam_2.setText(_translate("MainWindow", "Total Vocab Mastered"))
+        self.label_33.setText(_translate("MainWindow", "Mastered"))
+        self.label_ex_2.setText(_translate("MainWindow", "words learned permanently"))
+        self.lbl_mastered_pct.setText(_translate("MainWindow", "40%"))
+        self.label_35.setText(_translate("MainWindow", "Learning"))
+        self.label_ex_3.setText(_translate("MainWindow", "words actively being studied"))
+        self.lbl_learning_pct.setText(_translate("MainWindow", "35%"))
+        self.label_36.setText(_translate("MainWindow", "New Words"))
+        self.label_ex_4.setText(_translate("MainWindow", "unseen words in current sets"))
+        self.lbl_new_pct.setText(_translate("MainWindow", "25%"))
+        self.label_29.setText(_translate("MainWindow", "Learning Analytics"))
+        self.label_30.setText(_translate("MainWindow", "Weekly Study Time (minutes)"))
+        self.pushButton_6.setText(_translate("MainWindow", "x"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec())

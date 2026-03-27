@@ -1,0 +1,8 @@
+PyQt6
+PyQt6-WebEngine
+pandas
+openpyxl
+requests
+Pyrebase4
+google-auth-oauthlib
+google-api-python-client
