@@ -1,8 +1,16 @@
-PyQt6
-PyQt6-WebEngine
-pandas
-openpyxl
-requests
-Pyrebase4
-google-auth-oauthlib
-google-api-python-client
+# --- Giao diện (GUI) ---
+PyQt6>=6.4.0
+PyQt6-WebEngine>=6.4.0
+
+# --- Xử lý Dữ liệu & Excel (Model) ---
+pandas>=2.0.0
+openpyxl>=3.1.2
+
+# --- Biểu đồ & Thống kê (Controller) ---
+matplotlib>=3.7.0
+numpy>=1.24.0
+
+# --- Mạng & Đăng nhập Google/Facebook (Auth) ---
+requests>=2.31.0
+google-auth-oauthlib>=1.0.0
+google-api-python-client>=2.90.0

@@ -1,11 +1,12 @@
 from src.controllers.menu_controller import MainWindow
 from src.controllers.vocab_controller import M3M_Vocab_Ext
 from src.controllers.account_page_controller import AccountWindow
-from src.view.giaodien_homepage import HomePageUI
+from src.view.giaodien_homepage_ui import HomePageUI
 
 
 class DieuPhoiApp:
-    def __init__(self):
+    def __init__(self, current_user=None):
+        self.current_user = current_user or "guest"
         self.trang_chu = HomePageUI()
 
         for the_chu_de in self.trang_chu.danh_sach_the:
@@ -20,7 +21,7 @@ class DieuPhoiApp:
         self.trang_chu.hide()
 
     def mo_trang_progress(self):
-        self.trang_progress = AccountWindow()
+        self.trang_progress = AccountWindow(current_user=self.current_user)
         self.trang_progress.show()
         self.trang_chu.hide()
 
@@ -28,7 +29,7 @@ class DieuPhoiApp:
         danh_sach_mo_khoa = ["Greetings", "Education", "Travel and Culture"]
 
         if ten_chu_de in danh_sach_mo_khoa:
-            self.menu_bai_tap = MainWindow(ten_chu_de)
+            self.menu_bai_tap = MainWindow(ten_chu_de, current_user=self.current_user)
             self.menu_bai_tap.show()
         else:
             print(f"Chủ đề {ten_chu_de} hiện đang bị khóa, hãy cày level thêm!")

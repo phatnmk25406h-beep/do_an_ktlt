@@ -3,12 +3,13 @@ from PyQt6.QtWidgets import QMainWindow
 from src.controllers.flashcard_controller import FlashcardApp
 from src.controllers.fill_blank_controller import FillBlankApp
 from src.controllers.reorder_controller import LessonApp
-from src.view.giaodien_3_baitap import Ui_MainWindow
+from src.view.giaodien_3_baitap_ui import Ui_MainWindow
 
 class MainWindow(QMainWindow):
-    def __init__(self, topic_name=None):
+    def __init__(self, topic_name=None, current_user=None):
         super().__init__()
         self.topic_name = topic_name
+        self.current_user = current_user or "guest"
 
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
@@ -23,9 +24,9 @@ class MainWindow(QMainWindow):
         self.trang_flashcard_ui.show()
 
     def mo_trang_sap_xep(self):
-        self.trang_sap_xep_ui = LessonApp(self.topic_name)
+        self.trang_sap_xep_ui = LessonApp(self.topic_name, current_user=self.current_user)
         self.trang_sap_xep_ui.show()
 
     def mo_trang_duc_lo(self):
-        self.trang_duc_lo_ui = FillBlankApp(self.topic_name)
+        self.trang_duc_lo_ui = FillBlankApp(self.topic_name, current_user=self.current_user)
         self.trang_duc_lo_ui.show()

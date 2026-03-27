@@ -15,7 +15,7 @@ import os
 from PyQt6.QtWidgets import QFileDialog, QMainWindow, QMessageBox
 from PyQt6.QtCore import QTimer
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
-from src.view.giaodien_account_page import Ui_MainWindow
+from src.view.giaodien_account_page_ui import Ui_MainWindow
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QPixmap, QBitmap, QPainter
 from src.models.user_model import get_user_dashboard_data
@@ -82,7 +82,7 @@ class AccountWindow(QMainWindow):
     background:transparent;border:none;font-weight:bold;
     }"""
 
-    def __init__(self, parent=None):
+    def __init__(self, current_user=None, parent=None):
         super().__init__(parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
@@ -103,7 +103,7 @@ class AccountWindow(QMainWindow):
         # Dữ liệu mẫu 
         # --- NẠP DỮ LIỆU THẬT TỪ EXCEL ---
         self._days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-        self.current_user = "phat" # Tạm fix cứng tên user để test
+        self.current_user = current_user or "guest"
         
         user_data = get_user_dashboard_data(self.current_user)
         if user_data:

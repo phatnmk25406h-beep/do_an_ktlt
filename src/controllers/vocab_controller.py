@@ -18,7 +18,7 @@ from PyQt6.QtWidgets import (
 )
 
 from src.models.vocab_model import VocabRepository
-from src.view.M3M_Vocab_UI import Ui_MainWindow, G1, G2, GL, BDR, WH, TXT, SUB
+from src.view.giaodien_vocab_ui import Ui_MainWindow, G1, G2, GL, BDR, WH, TXT, SUB
 def get_image_path(filename):
     current_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(os.path.dirname(current_dir))
@@ -172,10 +172,11 @@ class CollCard(QFrame):
         layout.addLayout(action_row)
 
 
-class M3M_Vocab_Ext(QMainWindow, Ui_MainWindow):
+class M3M_Vocab_Ext(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setupUi(self)
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
 
         base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
         data_path = os.path.join(base_dir, "data", "vocab_sets.xlsx")
@@ -195,46 +196,46 @@ class M3M_Vocab_Ext(QMainWindow, Ui_MainWindow):
         self._open_create()
 
     def _go(self, page_index):
-        self.stack.setCurrentIndex(page_index)
+        self.ui.stack.setCurrentIndex(page_index)
 
     def _bind(self):
-        self.btn_nav_create.clicked.connect(self._open_create)
-        self.btn_nav_saved.clicked.connect(self._open_saved)
-        self.btn_save_set.clicked.connect(self._save_set)
-        self.btn_add_card.clicked.connect(lambda: self._add_row())
-        self.txt_search_saved.textChanged.connect(self._filter_saved)
-        self.cmb_sort.currentIndexChanged.connect(self._filter_saved)
-        self.btn_fc_prev.clicked.connect(self._fc_prev)
-        self.btn_fc_next.clicked.connect(self._fc_next)
-        self.btn_tap_flip.clicked.connect(self._fc_flip)
-        self.btn_close_study.clicked.connect(self._close_study)
-        self.btn_learn_again.clicked.connect(self._restart_study)
-        self.btn_continue.clicked.connect(self._open_saved)
+        self.ui.btn_nav_create.clicked.connect(self._open_create)
+        self.ui.btn_nav_saved.clicked.connect(self._open_saved)
+        self.ui.btn_save_set.clicked.connect(self._save_set)
+        self.ui.btn_add_card.clicked.connect(lambda: self._add_row())
+        self.ui.txt_search_saved.textChanged.connect(self._filter_saved)
+        self.ui.cmb_sort.currentIndexChanged.connect(self._filter_saved)
+        self.ui.btn_fc_prev.clicked.connect(self._fc_prev)
+        self.ui.btn_fc_next.clicked.connect(self._fc_next)
+        self.ui.btn_tap_flip.clicked.connect(self._fc_flip)
+        self.ui.btn_close_study.clicked.connect(self._close_study)
+        self.ui.btn_learn_again.clicked.connect(self._restart_study)
+        self.ui.btn_continue.clicked.connect(self._open_saved)
 
     def _open_create(self, edit_set=None):
         self._editing_id = edit_set["id"] if edit_set else None
         self._clear_rows()
 
         if edit_set:
-            self.lbl_form_h.setText("✏  Edit Vocabulary Set")
-            self.txt_set_title.setText(edit_set.get("title", ""))
-            self.txt_topic.setText(edit_set.get("topic", ""))
+            self.ui.lbl_form_h.setText("✏  Edit Vocabulary Set")
+            self.ui.txt_set_title.setText(edit_set.get("title", ""))
+            self.ui.txt_topic.setText(edit_set.get("topic", ""))
             for card in edit_set.get("cards", []):
                 self._add_row(card.get("term", ""), card.get("definition", ""))
         else:
-            self.lbl_form_h.setText("✨  Create a New Vocabulary Set")
-            self.txt_set_title.clear()
-            self.txt_topic.clear()
+            self.ui.lbl_form_h.setText("✨  Create a New Vocabulary Set")
+            self.ui.txt_set_title.clear()
+            self.ui.txt_topic.clear()
             for _ in range(3):
                 self._add_row()
 
         self._update_count()
         self._go(PG_CREATE)
-        self.txt_set_title.setFocus()
+        self.ui.txt_set_title.setFocus()
 
     def _add_row(self, term="", definition=""):
-        row = CardRow(self.cards_widget, len(self._card_rows) + 1, term, definition, on_delete=self._del_row)
-        self.cards_vl.addWidget(row)
+        row = CardRow(self.ui.cards_widget, len(self._card_rows) + 1, term, definition, on_delete=self._del_row)
+        self.ui.cards_vl.addWidget(row)
         self._card_rows.append(row)
         self._update_count()
 
@@ -255,7 +256,7 @@ class M3M_Vocab_Ext(QMainWindow, Ui_MainWindow):
 
     def _update_count(self):
         count = len(self._card_rows)
-        self.lbl_cnt.setText(f"{count} card{'s' if count != 1 else ''}")
+        self.ui.lbl_cnt.setText(f"{count} card{'s' if count != 1 else ''}")
 
     def _set_err(self, widget, is_error, placeholder=""):
         widget.setProperty("err", "true" if is_error else "false")
@@ -265,21 +266,21 @@ class M3M_Vocab_Ext(QMainWindow, Ui_MainWindow):
             widget.setPlaceholderText(placeholder)
 
     def _save_set(self):
-        title = self.txt_set_title.text().strip()
-        topic = self.txt_topic.text().strip()
+        title = self.ui.txt_set_title.text().strip()
+        topic = self.ui.txt_topic.text().strip()
 
         valid = True
         if not title:
-            self._set_err(self.txt_set_title, True, "⚠ This field is required.")
+            self._set_err(self.ui.txt_set_title, True, "⚠ This field is required.")
             valid = False
         else:
-            self._set_err(self.txt_set_title, False)
+            self._set_err(self.ui.txt_set_title, False)
 
         if not topic:
-            self._set_err(self.txt_topic, True, "⚠ This field is required.")
+            self._set_err(self.ui.txt_topic, True, "⚠ This field is required.")
             valid = False
         else:
-            self._set_err(self.txt_topic, False)
+            self._set_err(self.ui.txt_topic, False)
 
         if not valid:
             return
@@ -354,14 +355,14 @@ class M3M_Vocab_Ext(QMainWindow, Ui_MainWindow):
         self._go(PG_SAVED)
 
     def _filter_saved(self):
-        query = self.txt_search_saved.text().strip().lower()
+        query = self.ui.txt_search_saved.text().strip().lower()
         filtered = [
             vocab_set
             for vocab_set in self._sets
             if query in vocab_set.get("title", "").lower() or query in vocab_set.get("topic", "").lower()
         ]
 
-        sort_index = self.cmb_sort.currentIndex()
+        sort_index = self.ui.cmb_sort.currentIndex()
         if sort_index == 0:
             filtered.sort(key=lambda item: item.get("updated", ""), reverse=True)
         elif sort_index == 1:
@@ -370,8 +371,8 @@ class M3M_Vocab_Ext(QMainWindow, Ui_MainWindow):
         self._render_grid(filtered)
 
     def _render_grid(self, sets):
-        while self.grid_layout.count():
-            item = self.grid_layout.takeAt(0)
+        while self.ui.grid_layout.count():
+            item = self.ui.grid_layout.takeAt(0)
             if item.widget():
                 item.widget().deleteLater()
 
@@ -379,13 +380,13 @@ class M3M_Vocab_Ext(QMainWindow, Ui_MainWindow):
             empty_label = QLabel("No vocabulary sets yet.\nClick 'Create' to get started! 🌱")
             empty_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
             empty_label.setStyleSheet(f"color:{SUB}; font-size:14px; padding:40px;")
-            self.grid_layout.addWidget(empty_label, 0, 0, 1, 3)
+            self.ui.grid_layout.addWidget(empty_label, 0, 0, 1, 3)
             return
 
         cols = 3
         for index, vs in enumerate(sets):
-            card = CollCard(self.grid_widget, vs, on_study=self._start_study, on_review=self._review_action)
-            self.grid_layout.addWidget(card, index // cols, index % cols)
+            card = CollCard(self.ui.grid_widget, vs, on_study=self._start_study, on_review=self._review_action)
+            self.ui.grid_layout.addWidget(card, index // cols, index % cols)
 
     def _review_action(self, vs, action):
         if action == "edit":
@@ -414,8 +415,8 @@ class M3M_Vocab_Ext(QMainWindow, Ui_MainWindow):
         self._study_idx = 0
         self._flipped = False
 
-        self.lbl_study_topic.setText(f"🇬🇧  Topic: {vs.get('title', '')}")
-        self.prog_study.setMaximum(len(cards))
+        self.ui.lbl_study_topic.setText(f"🇬🇧  Topic: {vs.get('title', '')}")
+        self.ui.prog_study.setMaximum(len(cards))
         self._show_card()
         self._go(PG_STUDY)
 
@@ -425,15 +426,15 @@ class M3M_Vocab_Ext(QMainWindow, Ui_MainWindow):
         card = self._study_words[idx]
 
         self._flipped = False
-        self.lbl_fc_prog.setText(f"{idx + 1} / {total}")
-        self.prog_study.setValue(idx + 1)
+        self.ui.lbl_fc_prog.setText(f"{idx + 1} / {total}")
+        self.ui.prog_study.setValue(idx + 1)
 
-        self.lbl_word_big.setText(card.get("term", ""))
-        self.lbl_phonetic.setText(card.get("phonetic", ""))
-        self.lbl_meaning_vi.setText("")
-        self.lbl_example.setText("")
-        self.btn_tap_flip.setText("🔄  TAP TO FLIP")
-        self.word_card.setStyleSheet(f"QFrame#word_card {{background:{WH}; border-radius:16px; border:1px solid {BDR};}}")
+        self.ui.lbl_word_big.setText(card.get("term", ""))
+        self.ui.lbl_phonetic.setText(card.get("phonetic", ""))
+        self.ui.lbl_meaning_vi.setText("")
+        self.ui.lbl_example.setText("")
+        self.ui.btn_tap_flip.setText("🔄  TAP TO FLIP")
+        self.ui.word_card.setStyleSheet(f"QFrame#word_card {{background:{WH}; border-radius:16px; border:1px solid {BDR};}}")
 
     def _fc_flip(self):
         if not self._study_words:
@@ -441,11 +442,11 @@ class M3M_Vocab_Ext(QMainWindow, Ui_MainWindow):
 
         card = self._study_words[self._study_idx]
         if not self._flipped:
-            self.lbl_meaning_vi.setText(card.get("definition", ""))
-            self.lbl_example.setText(card.get("example", ""))
-            self.btn_tap_flip.setText("🔄  NEXT WORD")
+            self.ui.lbl_meaning_vi.setText(card.get("definition", ""))
+            self.ui.lbl_example.setText(card.get("example", ""))
+            self.ui.btn_tap_flip.setText("🔄  NEXT WORD")
             self._flipped = True
-            self.word_card.setStyleSheet(f"QFrame#word_card {{background:#E8F5E9; border-radius:16px; border:2px solid {G1};}}")
+            self.ui.word_card.setStyleSheet(f"QFrame#word_card {{background:#E8F5E9; border-radius:16px; border:2px solid {G1};}}")
         else:
             self._fc_next()
 
@@ -464,9 +465,9 @@ class M3M_Vocab_Ext(QMainWindow, Ui_MainWindow):
     def _finish_study(self):
         total = len(self._study_words)
         pct = 100
-        self.lbl_pct.setText(f"{pct}%")
-        self.lbl_done_frame_correct_n.setText(str(total))
-        self.lbl_done_frame_wrong_n.setText("0")
+        self.ui.lbl_pct.setText(f"{pct}%")
+        self.ui.lbl_done_frame_correct_n.setText(str(total))
+        self.ui.lbl_done_frame_wrong_n.setText("0")
 
         if self._study_set:
             updated_sets = deepcopy(self._sets)

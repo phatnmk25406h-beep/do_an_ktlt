@@ -1,9 +1,10 @@
 from PyQt6.QtCore import QTimer
 from PyQt6.QtWidgets import QMainWindow
 
-from src.models.auth_model import LocalAuth, GoogleLoginWorker, FacebookLoginDialog
+from src.models.local_auth_model import LocalAuth
+from src.models.auth_model import GoogleLoginWorker, FacebookLoginDialog
 from src.controllers.home_controller import DieuPhoiApp
-from src.view.Login_v3 import Ui_MainWindow
+from src.view.giaodien_login_ui import Ui_MainWindow
 
 
 class LoginWindow(QMainWindow):
@@ -15,6 +16,7 @@ class LoginWindow(QMainWindow):
         LocalAuth.init_excel_file()
         self._google_worker = None
         self.app_coordinator = None
+        self.current_user = None
 
         self.setup_connections()
         self.switch_to_login_tab()
@@ -77,6 +79,7 @@ class LoginWindow(QMainWindow):
 
         is_success, message = LocalAuth.check_login(email, password)
         if is_success:
+            self.current_user = email
             self.show_toast(message)
             QTimer.singleShot(700, self.open_homepage)
         else:
@@ -95,6 +98,7 @@ class LoginWindow(QMainWindow):
         dialog.exec()
 
     def on_social_success(self, user):
+        self.current_user = user.get("email") or user.get("name") or "guest"
         self.show_toast(f"Xin chào {user.get('name', '')}!")
         QTimer.singleShot(700, self.open_homepage)
 
@@ -117,6 +121,6 @@ class LoginWindow(QMainWindow):
         QTimer.singleShot(2500, lambda: self.ui.noti_general_2.setText(""))
 
     def open_homepage(self):
-        self.app_coordinator = DieuPhoiApp()
+        self.app_coordinator = DieuPhoiApp(current_user=self.current_user)
         self.app_coordinator.trang_chu.show()
         self.close()

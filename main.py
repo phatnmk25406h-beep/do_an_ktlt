@@ -2,7 +2,7 @@ import sys
 from PyQt6.QtWidgets import QApplication
 
 from src.controllers.login_controller import LoginWindow
-from src.view.splash_screen import SplashScreen
+from src.view.giaodien_splash_ui import SplashScreen
 
 
 def main():
